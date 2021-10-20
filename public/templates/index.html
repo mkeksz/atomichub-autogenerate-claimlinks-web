@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Генератор claim ссылок для atomichub</title>
+    <style>
+        body, body > div {
+            display: flex;
+            place-content: center;
+            place-items: center;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+            flex-direction: column;
+        }
+        #links {
+            margin-top: 60px;
+            display: none;
+            flex-direction: column;
+            place-content: center;
+            place-items: center;
+        }
+        #links.show {
+            display: flex;
+        }
+        #links > a {
+            display: block;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        #generate-block {
+            display: none;
+            flex-direction: column;
+            place-content: center;
+            place-items: center;
+        }
+        #generate-block.show {
+            display: flex;
+        }
+        #generate-block > button {
+            margin-top: 20px;
+        }
+        #generate-block > #download {
+            display: none;
+        }
+        #generate-block > #download.show {
+            display: inline-block;
+        }
+        #process, #completed {
+            margin: 20px 0 0;
+            display: none;
+        }
+        #process.show, #completed.show {
+            display: inline-block;
+        }
+        button {
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+        }
+        #login {
+            display: none;
+        }
+        #login.show {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="login" class="show">LOGIN</button>
+        <div id="generate-block">
+            <label><input type="text" placeholder="Название NFT"></label>
+            <span id="process">Идёт процесс...</span>
+            <span id="completed">Ссылки созданы!</span>
+            <button id="generate">Создать ссылки</button>
+            <button id="download">Скачать Excel</button>
+        </div>
+        <div id="links"></div>
+    </div>
+</body>
+</html>

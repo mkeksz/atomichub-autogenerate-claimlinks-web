@@ -1,0 +1,33 @@
+{
+  "name": "atomichub-autogenerate-claimlinks-web",
+  "version": "1.0.0",
+  "description": "Страница для генератора claim links atomichub",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack server --mode=development"
+  },
+  "keywords": [
+    "webpack",
+    "frontend",
+    "atomichub",
+    "wax",
+    "crypto"
+  ],
+  "browserslist": [
+    "defaults"
+  ],
+  "author": "Vladislav Mozharov <mrkeksz@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "atomichub-autogenerate-claimlinks": "^1.0.7",
+    "exceljs": "^4.3.0",
+    "node-polyfill-webpack-plugin": "^1.1.4"
+  }
+}
