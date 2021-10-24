@@ -29,7 +29,7 @@ $buttonGenerate.onclick = async () => {
 
     const name = $inputName.value
     try {
-        const assetPages = await atomic.getAssetIDs(name)
+        const assetPages = await atomic.getAssetIDs(name, 50)
         for (const assetIDs of assetPages) {
             const linkPage = await atomic.generateClaimLinks(assetIDs)
             for (const link of linkPage) {
