@@ -26,7 +26,7 @@
     "webpack-dev-server": "^4.1.0"
   },
   "dependencies": {
-    "atomichub-autogenerate-claimlinks": "^1.0.7",
+    "atomichub-autogenerate-claimlinks": "^1.0.9",
     "exceljs": "^4.3.0",
     "node-polyfill-webpack-plugin": "^1.1.4"
   }
